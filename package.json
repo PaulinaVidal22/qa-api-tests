@@ -1,0 +1,28 @@
+{
+  "name": "qa-api-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register --extensions ts \"src/tests/**/*.test.ts\"",
+    "test:report": "mocha --require ts-node/register --extensions ts \"src/tests/**/*.test.ts\" --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.2.3",
+    "ajv": "^8.18.0",
+    "chai": "^4.5.0",
+    "mocha": "^11.3.0",
+    "mochawesome": "^7.1.4",
+    "supertest": "^7.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.13.5"
+  }
+}
